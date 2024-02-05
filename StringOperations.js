@@ -59,4 +59,18 @@ function StrOccurns(str){
     });
     console.log(occurrencesObj);
 }
-StrOccurns("aditya")
+// StrOccurns("aditya")
+
+// Program to Count the Number of Vowels in a String
+const VowelsArr = ["a","e","i","o","u"];
+function VowelsInsStr(str){
+    let count=0;
+    str.split("").map((l)=>{
+        if(VowelsArr.includes(l))
+        count++;
+    })
+    console.log( count);
+}
+// VowelsInsStr("aeroplane");
+
+
