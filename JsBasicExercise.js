@@ -6,6 +6,7 @@ function sumD(x=10, y=2){
 // sumD(2); //4
 // sumD(5,8); //13
 
+
 //Program to Loop Through an Object
 const human = {
     "name": "Aditya",
@@ -13,7 +14,7 @@ const human = {
     "degree":"B.tech"
 }
 // The Object.freeze() static method freezes an object. Freezing an object prevents extensions and makes existing properties non-writable and non-configurable. 
-Object.freeze(human)
+// Object.freeze(human)
 human['age'] = 23
 function Dloop(){
 for(let key in human){
@@ -21,4 +22,7 @@ for(let key in human){
     console.log(key,"-",value);
 }
 }
+// Program to Add Key/Value Pair to an Object
+human["phone"] = 7378781651; //1
+human.city = "Hyderabad" //2
 // Dloop()
