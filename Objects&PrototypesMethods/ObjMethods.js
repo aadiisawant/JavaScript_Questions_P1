@@ -23,4 +23,6 @@ function Person(firstName,lastName){
     } 
 }
 let person2 = new Person('Ajay','totawad')
-person2.getFullname();
+// person2.getFullname();
+
+

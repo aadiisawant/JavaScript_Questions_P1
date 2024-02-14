@@ -17,3 +17,6 @@ function findUser(username){
     return user
 }
 console.log(findUser('adi')) // undefined
+
+
+

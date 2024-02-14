@@ -26,3 +26,9 @@ for(let key in human){
 human["phone"] = 7378781651; //1
 human.city = "Hyderabad" //2
 // Dloop()
+
+//AgeToDays
+function calculateDays(age){
+    console.log(age*365);
+}
+calculateDays(22)
