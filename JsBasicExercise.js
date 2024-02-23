@@ -31,4 +31,16 @@ human.city = "Hyderabad" //2
 function calculateDays(age){
     console.log(age*365);
 }
-calculateDays(22)
+// calculateDays(22)
+
+// NOt Working
+// const deviceMemory = navigator.deviceMemory;
+// console.log(`The device has ${deviceMemory} GB of RAM.`);
+
+// Write a function that determines if two strings are anagrams of each other  
+function checkAnagrms(str1, str2){
+    return str1.split("").sort().join("") === str2.split("").sort().join("");
+}
+console.log(checkAnagrms("Aditya","Raitya"))
+
+
