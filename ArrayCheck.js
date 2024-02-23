@@ -27,4 +27,14 @@ function isNum(aNum){
 function uniqueArr(arr){
     return Array.from(new Set(arr))
 }
-console.log(uniqueArr([1,2,3,1,4,2,5,3,5]));
+// console.log(uniqueArr([1,2,3,1,4,2,5,3,5]));
+
+// Given a string, write a function to count the occurrences of each character in the string. 
+function StrOcc(str){
+    let charOcc = {};
+    for(let char of str){
+        charOcc[char] = (charOcc[char]||0)+1;
+    }
+    return charOcc;
+}
+console.log(StrOcc("aditya"));
