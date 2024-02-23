@@ -41,6 +41,15 @@ function calculateDays(age){
 function checkAnagrms(str1, str2){
     return str1.split("").sort().join("") === str2.split("").sort().join("");
 }
-console.log(checkAnagrms("Aditya","Raitya"))
+// console.log(checkAnagrms("Aditya","Raitya"))
 
 
+// Create a JavaScript function that returns the Fibonacci sequence up to a given number, utilizing memoization for optimized performance.
+function fibonacciWithMemoiztn(num){
+    let memo = [0,1];
+    for(let i = 2;i<num;i++){
+        memo[i] = memo[i-1]+memo[i-2];
+    }
+    return memo;
+}
+// console.log(fibonacciWithMemoiztn(5));
