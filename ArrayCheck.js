@@ -41,5 +41,13 @@ function StrOcc(str){
 
 let isArr= [1,2,3,4,5]
 let notarr = {a:2,b:3}
-console.log(Array.isArray(isArr));
-console.log(Array.isArray(notarr));
+// console.log(Array.isArray(isArr));
+
+//using closure 
+var addThree = createBase(3)
+function createBase(baseNum){
+    return function(n){
+        return baseNum + n;
+    }
+}
+console.log(addThree(10))
