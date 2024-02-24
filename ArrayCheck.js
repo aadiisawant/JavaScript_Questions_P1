@@ -37,4 +37,9 @@ function StrOcc(str){
     }
     return charOcc;
 }
-console.log(StrOcc("aditya"));
+// console.log(StrOcc("aditya"));
+
+let isArr= [1,2,3,4,5]
+let notarr = {a:2,b:3}
+console.log(Array.isArray(isArr));
+console.log(Array.isArray(notarr));
