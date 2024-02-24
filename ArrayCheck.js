@@ -50,4 +50,18 @@ function createBase(baseNum){
         return baseNum + n;
     }
 }
-console.log(addThree(10))
+// console.log(addThree(10))
+
+// How would you use a closure to use a private counter
+function counter(){
+    var count = 0;
+    return {
+        add : function(num){ count += num},
+        retrive : function(){return 'The counter is at: '+count}
+    } //return an object with several functions
+}
+const counterCheck = counter();
+counterCheck.add(5);
+counterCheck.add(12);
+counterCheck.retrive(); //we can access the private variable
+console.log(counterCheck.retrive());
