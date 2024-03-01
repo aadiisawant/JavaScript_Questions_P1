@@ -64,4 +64,14 @@ const counterCheck = counter();
 counterCheck.add(5);
 counterCheck.add(12);
 counterCheck.retrive(); //we can access the private variable
-console.log(counterCheck.retrive());
+// console.log(counterCheck.retrive());
+
+const cars = ["Volvo", "Sqoda","Kia","BMW"];
+// console.log(cars.toString());
+cars.pop() // deleted last one
+// console.log(cars);//[ 'Volvo', 'Sqoda', 'Kia' ]
+cars.push("Volswagen") // added at the end
+cars.shift() // deleted 1st element
+// console.log(cars); //[ 'Sqoda', 'Kia', 'Volswagen' ]
+cars.unshift("BMW"); // added at the begining
+console.log(cars);

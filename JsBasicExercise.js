@@ -25,7 +25,7 @@ for(let key in human){
 // Program to Add Key/Value Pair to an Object
 human["phone"] = 7378781651; //1
 human.city = "Hyderabad" //2
-// Dloop()
+Dloop()
 
 //AgeToDays
 function calculateDays(age){
@@ -51,5 +51,5 @@ function fibonacciWithMemoiztn(num){
         memo[i] = memo[i-1]+memo[i-2];
     }
     return memo;
-}
+} 
 // console.log(fibonacciWithMemoiztn(5));
