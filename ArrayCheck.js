@@ -74,4 +74,9 @@ cars.push("Volswagen") // added at the end
 cars.shift() // deleted 1st element
 // console.log(cars); //[ 'Sqoda', 'Kia', 'Volswagen' ]
 cars.unshift("BMW"); // added at the begining
-console.log(cars);
+// delete cars[0];
+// console.log(cars); // [ <1 empty item>, 'Sqoda', 'Kia', 'Volswagen' ]
+const cars2 = ["Maruti","xyz"]
+// const MyCars = cars.concat("xyz");
+// console.log(MyCars);
+
