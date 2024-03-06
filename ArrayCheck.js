@@ -80,3 +80,15 @@ const cars2 = ["Maruti","xyz"]
 // const MyCars = cars.concat("xyz");
 // console.log(MyCars);
 
+// Destructuring
+const calculate = (a,b)=>{
+    const add = a+b
+    const sub = a-b;
+    const multi = a*b;
+    const div = a/b;
+    return [add,sub,multi,div]
+}
+// const [add,,,div] = calculate(5,10);
+// console.log(add,div);
+
+
