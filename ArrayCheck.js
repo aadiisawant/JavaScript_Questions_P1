@@ -103,4 +103,13 @@ var Every_Num_less = numAr.every(num => num<100)
 var Every_Num_less = numAr.some(num => num<90)
 // console.log(Every_Num_less);
 var filtAr = numAr.filter(num => num%2==0)
-console.log(filtAr);
+// console.log(filtAr);
+
+//reduction
+var sumReduce = numAr.reduce((sum,curr)=>{
+    return sum+curr;
+},0)
+// console.log(sumReduce);
+//for string
+var strConcat = numAr.reduce((str,val)=>{ return str+val},"")
+// console.log(strConcat);
