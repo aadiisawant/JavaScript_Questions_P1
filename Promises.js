@@ -10,7 +10,9 @@
 //  .catch((message) => console.log(message))
 
 let userPresent = true
-let userWatching = true
+let userWatching = false
+
+//with callbacks
 function userWatchCallbacks(callback, errorCallback){
     if(!userPresent){
         errorCallback({
@@ -26,8 +28,35 @@ function userWatchCallbacks(callback, errorCallback){
         callback( "User is doing the task given")
     }
 }
-userWatchCallbacks((message)=>{
+// userWatchCallbacks((message)=>{
+//     console.log('success : '+message);
+// },(error)=>{
+//     console.log(error.name +"\n"+error.message);
+// })
+
+// with promise
+function userWatchCallbacksPromise(){
+    return new Promise((resolve,reject)=>{
+        if(!userPresent){
+            reject({
+                name : "User Left",
+                message : "Bad News"
+            })
+        } else if(userWatching){
+            reject({
+                name: "watching memes",
+                message : "Scrolling Social Media"
+            })
+        }else{
+            resolve( "User is doing the task given.")
+        }
+    })
+   
+}
+userWatchCallbacksPromise()
+.then((message)=>{
     console.log('success : '+message);
-},(error)=>{
+})
+.catch((error)=>{
     console.log(error.name +"\n"+error.message);
 })
