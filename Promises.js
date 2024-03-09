@@ -53,10 +53,25 @@ function userWatchCallbacksPromise(){
     })
    
 }
-userWatchCallbacksPromise()
-.then((message)=>{
-    console.log('success : '+message);
+// userWatchCallbacksPromise()
+// .then((message)=>{
+//     console.log('success : '+message);
+// })
+// .catch((error)=>{
+//     console.log(error.name +"\n"+error.message);
+// })
+
+const lectOne = new Promise((resolve,reject) =>{
+    resolve('Lecture one is done')
 })
-.catch((error)=>{
-    console.log(error.name +"\n"+error.message);
+const lectTwo = new Promise((resolve,reject) =>{
+    resolve('Lecture 2 is done')
 })
+const lectThree = new Promise((resolve,reject) =>{
+    resolve('Lecture 3 is done')
+})
+// all,race
+// Promise.all([
+//     lectOne, lectThree,lectTwo
+// ]).then((messages)=>console.log(messages))
+// console.log(lectOne === Promise.resolve(lectOne));
