@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEY | Keyboard</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 5px;
+            
+        }
+        th{
+            background-color: rgb(221, 204, 204);
+            color: red;
+        }
+        table tr:nth-child(even){
+            background-color: #efefef;
+        }
+    </style>
+</head>
+<body>
+    <h1>Press the keys and see magic</h1>
+    <div id="insert">
+        <table hidden id="hide">
+            <tr>
+                <th>Key</th>
+                <th>KeyCode</th>
+                <th>Code</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
