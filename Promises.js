@@ -75,3 +75,32 @@ const lectThree = new Promise((resolve,reject) =>{
 //     lectOne, lectThree,lectTwo
 // ]).then((messages)=>console.log(messages))
 // console.log(lectOne === Promise.resolve(lectOne));
+
+const promiseThree = new Promise((resolve,reject)=>{
+    setTimeout(function(){
+    let user = false;
+    if(user){
+        resolve({username:"Aditya",email:"adi@example.com"})
+    }else{
+        reject('Error : User not found')
+    }
+},2000)
+})
+
+// promiseThree.then((user)=>{
+//     return user.username
+// }).then((username)=>{
+//     console.log(username);
+// }).catch((error)=>{
+//     console.error(error)
+// }).finally(()=> console.log("Finally Block"))
+
+async function consumePromiseThree(){
+    try{
+    const response = await promiseThree
+    console.log(response);
+    }catch(error){
+    console.log(error);  
+    }
+}
+consumePromiseThree()
