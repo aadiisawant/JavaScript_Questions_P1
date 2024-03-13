@@ -17,4 +17,5 @@ function user(username,loginCount,isLogedIn){
 }
 const userOne = new user("Aditya",12,true)
 const userTwo = new user("Ram",15,false)
-console.log(userTwo.greet());
+// console.log(userTwo.greet());
+// var arr = [[a,1],[b,2],[a,3]]
